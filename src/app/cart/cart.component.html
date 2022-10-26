@@ -1,0 +1,8 @@
+<h2>Cart</h2>
+<a [routerLink]="['/shipping']">
+  <p>Shipping</p>
+</a>
+<div *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>
